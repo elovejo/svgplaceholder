@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SVG Placeholder Generator</title>
+  <style>
+    :root {
+      --bg: #f6f8fa;
+      --text: #2c3e50;
+      --code-bg: #f0f0f0;
+      --border: #ddd;
+      --accent: #2980b9;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      margin: 0;
+      padding: 1.5rem;
+      color: var(--text);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: var(--text);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      color: var(--text);
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    code {
+      background: var(--code-bg);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95rem;
+      color: #d6336c;
+      word-break: break-word;
+    }
+
+    pre code {
+      display: block;
+      overflow-x: auto;
+      padding: 0.8rem;
+      background: #272822;
+      color: #f8f8f2;
+      border-radius: 8px;
+    }
+
+    section {
+      max-width: 860px;
+      margin: auto;
+    }
+
+    .example {
+      margin: 2rem 0;
+      padding: 1rem;
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    img {
+      max-width: 100%;
+      margin-top: 0.7rem;
+      border: 1px dashed #aaa;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    .url {
+      color: var(--accent);
+      font-weight: bold;
+      word-break: break-word;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      pre code {
+        font-size: 0.9rem;
+      }
+      code {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🖼️ SVG Placeholder Generator</h1>
+    <p>Genera imágenes SVG personalizadas desde una URL. Ideal para prototipos, wireframes y pruebas de front-end.</p>
+  </header>
+
+  <section>
+    <h2>🔧 ¿Cómo funciona?</h2>
+    <p>Solo usa una URL como:</p>
+    <p><code class="url">https://svgplaceholder.vercel.app/300x200</code></p>
+    <div class="example">
+      <img src="https://svgplaceholder.vercel.app/300x200" alt="300x200 example" />
+    </div>
+
+    <h2>📝 Formato de la URL</h2>
+    <pre><code>https://svgplaceholder.vercel.app/:dimensions/:bgColor?/:textColor?/:customText?</code></pre>
+
+    <ul>
+      <li><code>dimensions</code> → obligatorio. Ej: <code>300x200</code></li>
+      <li><code>bgColor</code> → opcional. Color de fondo HEX (sin #). Ej: <code>ff0000</code></li>
+      <li><code>textColor</code> → opcional. Color del texto HEX (sin #). Ej: <code>ffffff</code></li>
+      <li><code>customText</code> → opcional. Texto personalizado, codificado en URL</li>
+    </ul>
+
+    <h2>🎯 Ejemplos rápidos</h2>
+
+    <div class="example">
+      <p><code>https://svgplaceholder.vercel.app/400x300/e74c3c</code></p>
+      <img src="https://svgplaceholder.vercel.app/400x300/e74c3c" alt="Ejemplo 1" />
+    </div>
+
+    <div class="example">
+      <p><code>https://svgplaceholder.vercel.app/500x200/3498db/ffffff</code></p>
+      <img src="https://svgplaceholder.vercel.app/500x200/3498db/ffffff" alt="Ejemplo 2" />
+    </div>
+
+    <div class="example">
+      <p><code>https://svgplaceholder.vercel.app/600x400/2c3e50/ecf0f1/Texto%20Personalizado</code></p>
+      <img src="https://svgplaceholder.vercel.app/600x400/2c3e50/ecf0f1/Texto%20Personalizado" alt="Ejemplo 3" />
+    </div>
+  </section>
+
+  <footer>
+    Hecho con 🖤 por el Ovejo
+  </footer>
+</body>
+</html>
