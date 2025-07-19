@@ -101,10 +101,10 @@ app.get("/", (req, res) => {
             "/:dimensions/:bgColor/:textColor/:customText",
         ],
         examples: [
-            `http://localhost:${PORT}/300x200`,
-            `http://localhost:${PORT}/400x300/e74c3c`,
-            `http://localhost:${PORT}/500x200/3498db/ffffff`,
-            `http://localhost:${PORT}/600x400/2c3e50/ecf0f1/Custom%20Text`,
+            `https://svgplaceholder.vercel.app/300x200`,
+            `https://svgplaceholder.vercel.app/400x300/e74c3c`,
+            `https://svgplaceholder.vercel.app/500x200/3498db/ffffff`,
+            `https://svgplaceholder.vercel.app/600x400/2c3e50/ecf0f1/Custom%20Text`,
         ],
     });
 });

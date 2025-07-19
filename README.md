@@ -11,7 +11,7 @@ Servicio ligero desplegado en Vercel para generar imágenes SVG dinámicas como 
 Genera imágenes SVG personalizadas que puedes insertar en cualquier entorno web, simplemente accediendo a una URL como esta:
 
 ```
-https://placeholder.vercel.app/300x200/ff0000/ffffff/Hello%20World
+https://svgplaceholder.vercel.app/300x200/ff0000/ffffff/Hello%20World
 ```
 
 ---
@@ -28,7 +28,7 @@ https://placeholder.vercel.app/300x200/ff0000/ffffff/Hello%20World
 > 🔗 **Base URL (en producción):**
 >
 > ```
-> https://placeholder.vercel.app/
+> https://svgplaceholder.vercel.app/
 > ```
 
 ---
@@ -36,7 +36,7 @@ https://placeholder.vercel.app/300x200/ff0000/ffffff/Hello%20World
 ## 🔧 Formato de la URL
 
 ```
-https://placeholder.vercel.app/:dimensions/:bgColor?/:textColor?/:customText?
+https://svgplaceholder.vercel.app/:dimensions/:bgColor?/:textColor?/:customText?
 ```
 
 - `dimensions` → obligatorio (ej. `300x200`)
@@ -49,8 +49,8 @@ https://placeholder.vercel.app/:dimensions/:bgColor?/:textColor?/:customText?
 ## 🧪 Ejemplos prácticos para usar en HTML
 
 ```html
-<img src="https://placeholder.vercel.app/400x300" alt="placeholder" />
-<img src="https://placeholder.vercel.app/600x400/2c3e50/ecf0f1/Hello%20World" alt="custom" />
+<img src="https://svgplaceholder.vercel.app/400x300" alt="placeholder" />
+<img src="https://svgplaceholder.vercel.app/600x400/2c3e50/ecf0f1/Hello%20World" alt="custom" />
 ```
 
 ---
