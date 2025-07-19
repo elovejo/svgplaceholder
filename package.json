@@ -1,0 +1,20 @@
+{
+  "name": "placeholder-svg",
+  "version": "1.0.0",
+  "description": "Un generador de imágenes SVG placeholder",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "svg",
+    "generator",
+    "placeholder"
+  ],
+  "author": "el Ovejo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
