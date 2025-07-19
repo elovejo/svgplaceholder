@@ -10,19 +10,19 @@ const calculateFontSize = (width, height, text = "") => {
     const maxDimension = Math.max(width, height);
 
     // Tamaño base proporcional a la dimensión menor
-    let fontSize = Math.max(minDimension * 0.08, 12); // Mínimo 12px
+    let fontSize = Math.max(minDimension * 0.12, 14); // Mínimo 12px
 
     // Ajustar según la longitud del texto
     const textLength = text.length || `${width}x${height}`.length;
     if (textLength > 8) {
-        fontSize = Math.max(fontSize * 0.8, 10);
+        fontSize = Math.max(fontSize * 0.9, 12);
     }
     if (textLength > 15) {
-        fontSize = Math.max(fontSize * 0.7, 8);
+        fontSize = Math.max(fontSize * 0.8, 10);
     }
 
     // Limitar el tamaño máximo
-    return Math.min(fontSize, maxDimension * 0.15);
+    return Math.min(fontSize, maxDimension * 0.2);
 };
 
 // Función para validar colores hexadecimales
