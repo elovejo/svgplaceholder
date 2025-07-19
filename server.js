@@ -6,24 +6,22 @@ const PORT = process.env.PORT || 3000;
 
 // Función para calcular el tamaño de fuente proporcional
 const calculateFontSize = (width, height, text = "") => {
-    const minDimension = Math.min(width, height);
-    const maxDimension = Math.max(width, height);
+    const minDim = Math.min(width, height);
+    const maxDim = Math.max(width, height);
 
-    // Tamaño base proporcional a la dimensión menor
-    let fontSize = Math.max(minDimension * 0.12, 14); // Mínimo 12px
+    // Mayor multiplicador y mínimo más alto
+    let fontSize = Math.max(minDim * 0.15, 16);
 
-    // Ajustar según la longitud del texto
-    const textLength = text.length || `${width}x${height}`.length;
-    if (textLength > 8) {
-        fontSize = Math.max(fontSize * 0.9, 12);
-    }
-    if (textLength > 15) {
-        fontSize = Math.max(fontSize * 0.8, 10);
-    }
+    const length = text.length || `${width} x ${height}`.length;
 
-    // Limitar el tamaño máximo
-    return Math.min(fontSize, maxDimension * 0.2);
+    // Ajustes más suaves por longitud
+    if (length > 10) fontSize = Math.max(fontSize * 0.9, 14);
+    if (length > 18) fontSize = Math.max(fontSize * 0.8, 12);
+
+    // Máximo ligeramente más permisivo
+    return Math.min(fontSize, maxDim * 0.25);
 };
+
 
 // Función para validar colores hexadecimales
 const isValidColor = (color) => {
@@ -58,7 +56,7 @@ const generateSvg = (
 
     const text = customText
         ? decodeURIComponent(customText)
-        : `${width}x${height}`;
+        : `${width} x ${height}`;
     const fontSize = calculateFontSize(width, height, text);
 
     return `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
