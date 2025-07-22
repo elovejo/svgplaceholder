@@ -68,8 +68,8 @@ https://svgplaceholder.vercel.app/:dimensions/:bgColor?/:textColor?/:customText?
 Aunque no es necesario, puedes correrlo localmente si lo deseas:
 
 ```bash
-git clone https://github.com/elovejo/placeholder.git
-cd svg-placeholder-generator
+git clone https://github.com/elovejo/svgplaceholder.git
+cd svgplaceholder
 npm install
 npm start
 ```
