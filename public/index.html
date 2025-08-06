@@ -1,165 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SVG Placeholder Generator</title>
-  <style>
-    :root {
-      --bg: #f6f8fa;
-      --text: #2c3e50;
-      --code-bg: #f0f0f0;
-      --border: #ddd;
-      --accent: #2980b9;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentación | elovejo.com</title>
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--bg);
-      margin: 0;
-      padding: 1.5rem;
-      color: var(--text);
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      color: var(--text);
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 2rem;
-      color: var(--text);
-    }
-
-    p {
-      font-size: 1.05rem;
-      line-height: 1.6;
-      color: #555;
-    }
-
-    code {
-      background: var(--code-bg);
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-family: 'Courier New', monospace;
-      font-size: 0.95rem;
-      color: #d6336c;
-      word-break: break-word;
-    }
-
-    pre code {
-      display: block;
-      overflow-x: auto;
-      padding: 0.8rem;
-      background: #272822;
-      color: #f8f8f2;
-      border-radius: 8px;
-    }
-
-    section {
-      max-width: 860px;
-      margin: auto;
-    }
-
-    .example {
-      margin: 2rem 0;
-      padding: 1rem;
-      border: 1px solid var(--border);
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-    }
-
-    img {
-      max-width: 100%;
-      margin-top: 0.7rem;
-      border: 1px dashed #aaa;
-      border-radius: 4px;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #999;
-    }
-
-    .url {
-      color: var(--accent);
-      font-weight: bold;
-      word-break: break-word;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.8rem;
-      }
-      h2 {
-        font-size: 1.2rem;
-      }
-      pre code {
-        font-size: 0.9rem;
-      }
-      code {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+    <!-- Metadatos SEO y sociales -->
+    <meta name="description" content="Documentación oficial de la API de embajadas en Bogotá, Colombia.">
+    <meta property="og:title" content="API de Embajadas - elovejo.com">
+    <meta property="og:description" content="Accede a datos de embajadas por país, ciudad o tipo.">
+    <meta property="og:image" content="https://elovejo.com/img/logo.png">
+    <meta property="og:url" content="https://elovejo.com">
+    <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
-  <header>
-    <h1>🖼️ SVG Placeholder Generator</h1>
-    <p>Genera imágenes SVG personalizadas desde una URL. Ideal para prototipos, wireframes y pruebas de front-end.</p>
-  </header>
+    <nav>
+        <a href="https://elovejo.com" target="_blank" rel="noopener noreferrer">
+            <img src="./img/logo.png" alt="Logo elovejo.com" height="60" />
+        </a>
+    </nav>
 
-  <section>
-    <h2>🔧 ¿Cómo funciona?</h2>
-    <p>Solo usa una URL como:</p>
-    <p><code class="url">https://svgplaceholder.vercel.app/300x200</code></p>
-    <div class="example">
-      <img src="https://svgplaceholder.vercel.app/300x200" alt="300x200 example" />
-    </div>
+    <main class="container">
+        <header>
+            <h1>SVG Placeholder Generator</h1>
+            <p>Genera imágenes SVG personalizadas desde una URL. Ideal para prototipos, wireframes y pruebas de front-end.</p>
+        </header>
 
-    <h2>📝 Formato de la URL</h2>
-    <pre><code>https://svgplaceholder.vercel.app/:dimensions/:bgColor?/:textColor?/:customText?</code></pre>
+        <section>
+            <h2>🔧 ¿Cómo funciona?</h2>
+            <p>Solo usa una URL como:</p>
+            <article>
+                <pre><button class="copy-btn" aria-label="Copiar endpoint" title="Copiar"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg></button><code> https://svgplaceholder.vercel.app/300x200</code></pre>
+            </article>
+        </section>
 
-    <ul>
-      <li><code>dimensions</code> → obligatorio. Ej: <code>300x200</code></li>
-      <li><code>bgColor</code> → opcional. Color de fondo HEX (sin #). Ej: <code>ff0000</code></li>
-      <li><code>textColor</code> → opcional. Color del texto HEX (sin #). Ej: <code>ffffff</code></li>
-      <li><code>customText</code> → opcional. Texto personalizado, codificado en URL</li>
-    </ul>
+        <section>
+            <h2>📝 Formato de la URL</h2>
+            <article>
+                <pre><button class="copy-btn" aria-label="Copiar endpoint" title="Copiar"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg></button><code> https://svgplaceholder.vercel.app/:dimensions/:bgColor?/:textColor?/:customText?</code></pre>
+            </article>
+            <div>
+                <ul>
+                    <li><code class="inline">dimensions</code> → obligatorio. Ej: <code>300x200</code></li>
+                    <li><code class="inline">bgColor</code> → opcional. Color de fondo HEX (sin #). Ej: <code>ff0000</code></li>
+                    <li><code class="inline">textColor</code> → opcional. Color del texto HEX (sin #). Ej: <code>ffffff</code></li>
+                    <li><code class="inline">customText</code> → opcional. Texto personalizado, codificado en URL</li>
+                </ul>
+            </div>
+        </section>
 
-    <h2>🎯 Ejemplos rápidos</h2>
+        <section>
+            <h2>🎯 Ejemplos rápidos</h2>
+            <article>
+                <pre><button class="copy-btn" aria-label="Copiar endpoint" title="Copiar"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg></button><code> https://svgplaceholder.vercel.app/400x300/f56e0f</code></pre>
+            </article>
+            <img src="https://svgplaceholder.vercel.app/400x300/f56e0f" alt="Ejemplo 1" />
+        </section>
 
-    <div class="example">
-      <p><code>https://svgplaceholder.vercel.app/400x300/e74c3c</code></p>
-      <img src="https://svgplaceholder.vercel.app/400x300/e74c3c" alt="Ejemplo 1" />
-    </div>
+        <section>
+            <article>
+                <pre><button class="copy-btn" aria-label="Copiar endpoint" title="Copiar"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg></button><code> https://svgplaceholder.vercel.app/500x200/3498db/ffffff</code></pre>
+            </article>
+            <img src="https://svgplaceholder.vercel.app/500x200/3498db/ffffff" alt="Ejemplo 2" />
+        </section>
 
-    <div class="example">
-      <p><code>https://svgplaceholder.vercel.app/500x200/3498db/ffffff</code></p>
-      <img src="https://svgplaceholder.vercel.app/500x200/3498db/ffffff" alt="Ejemplo 2" />
-    </div>
+        <section>
+            <article>
+                <pre><button class="copy-btn" aria-label="Copiar endpoint" title="Copiar"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg></button><code> https://svgplaceholder.vercel.app/600x400/2c3e50/ecf0f1/Texto%20Personalizado</code></pre>
+            </article>
+            <img src="https://svgplaceholder.vercel.app/600x400/2c3e50/ecf0f1/Texto%20Personalizado" alt="Ejemplo 2" />
+        </section>
 
-    <div class="example">
-      <p><code>https://svgplaceholder.vercel.app/600x400/2c3e50/ecf0f1/Texto%20Personalizado</code></p>
-      <img src="https://svgplaceholder.vercel.app/600x400/2c3e50/ecf0f1/Texto%20Personalizado" alt="Ejemplo 3" />
-    </div>
-  </section>
+        <section>
+            <h2 class="flex">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+                &nbsp;Repositorio
+            </h2>
+            <p><a href="https://github.com/elovejo/svgplaceholder" target="_blank">github.com/elovejo/svgplaceholder</a>
+            </p>
+        </section>
+    </main>
 
-  <footer>
-    Hecho con 🖤 por el Ovejo
-  </footer>
+    <footer>
+        Hecho con ❤️ por el Ovejo
+    </footer>
+
+    <!-- JS -->
+    <script>
+        const copyButtons = document.querySelectorAll('.copy-btn');
+        copyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const codeBlock = button.nextElementSibling;
+                if (!codeBlock) return;
+                const textToCopy = codeBlock.innerText.trim();
+
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    const originalIcon = button.innerHTML;
+                    button.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round" class="icon-tabler-check">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 12l5 5l10 -10" />
+            </svg>`;
+                    setTimeout(() => {
+                        button.innerHTML = originalIcon;
+                    }, 2000);
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
